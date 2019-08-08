@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+:root{
+--mainBlue:#40ACF1;
+--transparentBlue:rgba(64,172,241,0.7);
+--mainWhite:#FFFFFF;
+--mainBlack:#292F36;
+--mainGrey:rgb(216,214,214);
+--mainYellow:#e3b505;
+--mainGreen:#A3D511;  
+
+}
+
+body{
+    color: var(--mainBlack);
+    background: var(--mainWhite);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navbar{
+    background-color: var(--mainWhite);
+}
+
+.navbar-icon{
+    font-size: 2rem;
+    color: var(--mainBlue);
+}
+
+.navbar-toggler{
+    outline-color: var(--mainBlue)!important;
+}
+
+.nav-link{
+    color: var(--mainBlack);
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    color: var(--mainBlue);
+}
+
+.nav-icon{
+    font-size: 1.5rem;
+    color: var(--mainBlue);
+    text-decoration: none!important;
+    transition-property: color;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+
+.nav-icon:hover{
+    color: var(--mainBlack);
+}
+
+.header{
+    color: var(--mainWhite);
+}
+
+.height-max{
+    background:url('../image/bmw.jpg');
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.title-heading{
+    background : rgba(0, 0, 0, 0.4);
+    border-left: 0.3rem solid var(--mainBlue);
+}
+
+.title{
+    font-weight: 500;
+    font-size: 1.9rem;
+}
+
+@media screen and (min-width:768px){
+    .title{
+        font-size: 3rem;
+    }
+}
+
+.title-icon{
+    color: var(--mainBlue);
+    text-decoration: none;
+}
+
+.title-icon{
+    color: var(--mainBlue);
+    opacity: 0.6;
+}
+
+.section-title--special{
+    background: var(--mainYellow);
+    color: var(--mainWhite);
+    padding: 0.5rem 2rem;
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
+}
+
+.section-title--special2{
+    background: var(--transparentBlue);
+    color: var(--mainWhite);
+    padding: 0.5rem 2rem;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+}
+
+.section-title--special3{
+    background: var(--mainGreen);
+    color: var(--mainWhite);
+    padding: 0.5rem 2rem;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+}
+
+.skills-icon{
+    font-size: 3rem;
+    color: var(--mainYellow);
+    background: var(--mainGrey);
+}
+
+.skills-icon:hover{
+    color: orange;
+}
+
+.skills-underline{
+    background: var(--mainBlue);
+    width: 4rem;
+    height: 0.3rem;
+    margin: 1rem auto;
+}
+
+.img-width{
+    width: 100px;
+}
+
+/* inventory */
+
+.inventory{
+    background: #5D6D7E;
+}
+
+.car-card{
+    border-radius: 0;
+}
+
+.car-img{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.car-value{
+    background: var(--mainBlue);
+    color: var(--mainWhite);
+    clip-path: polygon(15% 0,85% 0,100% 100%,0 100%);
+    transition: all 0.5s linear;
+}
+
+.car-value:hover{
+    clip-path: polygon(0% 0,100% 0,100% 100%,0 100%);
+}
+
+.question{
+    background: url('../image/lamborgini.jpg')center/cover fixed no-repeat;
+}
+
+.question-grey{
+    background: rgba(180, 181, 172 ,0.75);
+}
+
+.question-yellow{
+    background: rgba(252, 229, 0, 0.75);
+}
+
+.question-icon{
+    font-size: 4rem;
+    color: var(--mainBlue);
+    transition: all 0.5s ease-in-out;
+}
+
+.question-icon:hover{
+    transform: translateY(10%);
+    color: #1F618D;  
+}
+
+.question-info{
+    color: var(--mainWhite);
+}
+
+.featured{
+    background: var(--mainGrey);
+}
+
+.featured-item{
+    background: var(--mainWhite);
+    border-radius: 0.5rem;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.featured-item:hover{
+    opacity: 1;
+    transform: scale(1.05);
+    color: #1F618D;
+}
+
+.featured-icon{
+    font-size: 1.5rem;
+    color: var(--mainYellow);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.featured-icon:hover{
+    color: var(--mainBlue);
+}
+
+.img-container{
+
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-photo{
+    transition: all 1s ease-in-out;
+}
+
+.img-container:hover .featured-photo{
+    transform: scale(1.3);
+    opacity: 0.5;
+}
+
+.featured-link{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 3rem;
+    transform: translate(-50%,-50%);
+    color: var(--mainBlack);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.featured-link:hover{
+    color: var(--mainWhite);
+}
+
+.img-container:hover .featured-link{
+    opacity: 1;
+}
+  
